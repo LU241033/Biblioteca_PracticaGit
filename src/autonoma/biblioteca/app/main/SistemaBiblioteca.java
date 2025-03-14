@@ -5,7 +5,7 @@ package autonoma.biblioteca.app.main;
  * @since 20251303
  *@version 1.0.0
  */
-public class Biblioteca {
+public class SistemaBiblioteca {
 
     public static void main(String[] args) {
         

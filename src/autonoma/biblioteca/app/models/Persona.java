@@ -7,7 +7,7 @@ package autonoma.biblioteca.app.models;
  * @since 20251303
  * @version 1.0.0
  */
-public class Persona {
+public abstract class Persona {
     
     // Atributos
     
