@@ -8,7 +8,6 @@ package autonoma.biblioteca.app.models;
  * @version 1.0.0
  */
 public abstract class Persona {
-    
     // Atributos
     
     //Nombre de la persona
