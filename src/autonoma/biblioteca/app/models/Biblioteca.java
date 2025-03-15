@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package autonoma.biblioteca.app.models;
 
 /**
@@ -12,9 +9,10 @@ package autonoma.biblioteca.app.models;
  */
 
 import java.util.ArrayList;
+import java.util.Comparator;
 public class Biblioteca {
     //Se crea la lista para almacenar los libros
-    private ArrayList<Libro> libros;
+    private final ArrayList<Libro> libros;
     //Metodo constructor de el Array
     public Biblioteca() {
         this.libros = new ArrayList<>();
@@ -38,4 +36,5 @@ public class Biblioteca {
         }
         return libros.add(libro);
     }
+    
 }
