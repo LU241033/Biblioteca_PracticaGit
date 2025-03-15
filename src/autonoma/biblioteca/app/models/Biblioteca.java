@@ -36,5 +36,21 @@ public class Biblioteca {
         }
         return libros.add(libro);
     }
-    
+     // Método para actualizar un libro
+    public boolean actualizarLibro(long id, Libro nuevoLibro) {
+        for (int i = 0; i < libros.size(); i++) {
+            if (libros.get(i).getId() == id) {
+                libros.set(i, nuevoLibro);
+                return true;
+            }
+        }
+        return false;
+    }
+     // Método para obtener los libros ordenados alfabéticamente por título
+    public ArrayList<Libro> obtenerLibrosAlfabeticamente() {
+        ArrayList<Libro> librosOrdenados = new ArrayList<>(libros);
+        librosOrdenados.sort(Comparator.comparing(Libro::getTitulo));
+        return librosOrdenados;
+    }
 }
+
